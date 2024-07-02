@@ -13,16 +13,16 @@
         android:gravity="center"
         >
         <ImageView
+            android:id="@+id/back_btn"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:layout_gravity="center"
             android:src="@drawable/back_icon"
-            android:onClick="handleBackToListingPage"
             />
         <TextView
+            android:id="@+id/task_header_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Create a new task"
             android:gravity="center"
             android:textAlignment="center"
             android:textSize="23sp"
@@ -65,6 +65,8 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="10sp"
                 android:hint="Enter task name here"
+                android:paddingRight="10sp"
+                android:maxLength="10"
                 />
         </LinearLayout>
 
@@ -108,6 +110,7 @@
                     android:checked="true"
                     />
                 <RadioButton
+                    android:id="@+id/work_radio_button"
                     android:layout_width="80sp"
                     android:layout_height="wrap_content"
                     android:text="Work"
@@ -122,6 +125,7 @@
                     android:textStyle="bold"
                     />
                 <RadioButton
+                    android:id="@+id/project_radio_button"
                     android:layout_width="80sp"
                     android:layout_height="wrap_content"
                     android:text="Project"
@@ -136,6 +140,7 @@
                     android:textStyle="bold"
                     />
                 <RadioButton
+                    android:id="@+id/groceries_radio_button"
                     android:layout_width="80sp"
                     android:layout_height="wrap_content"
                     android:text="Groceries"
@@ -164,7 +169,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Date &amp; Time"
+                android:text="Plan Finish Date"
                 android:fontFamily="@font/cabin_regular"
                 android:textStyle="bold"
                 android:textSize="22sp"

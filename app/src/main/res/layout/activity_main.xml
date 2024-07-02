@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -78,26 +78,26 @@
             <LinearLayout
                 android:layout_alignParentLeft="true"
                 android:layout_width="180sp"
-                android:layout_height="100sp"
+                android:layout_height="80sp"
                 android:background="@drawable/dashbord_filter_project"
                 android:gravity="center"
                 >
                 <LinearLayout
                     android:layout_width="130dp"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     >
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                         <LinearLayout
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:gravity="center"
                             android:background="@drawable/dashboard_icon_circle"
                             >
                             <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="26dp"
+                                android:layout_width="15dp"
+                                android:layout_height="21dp"
                                 android:src="@drawable/project_icon"
                                 />
                         </LinearLayout>
@@ -107,17 +107,18 @@
                             android:text="Project"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentBottom="true"
-                            android:textSize="23dp"
+                            android:textSize="20dp"
                             android:textStyle="bold"
                             android:fontFamily="@font/cabin_regular"
                             />
                         <TextView
+                            android:id="@+id/project_totalcounts"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="5"
                             android:layout_alignParentRight="true"
                             android:layout_alignParentBottom="true"
-                            android:textSize="23dp"
+                            android:textSize="20dp"
                             android:textStyle="bold"
                             android:fontFamily="@font/cabin_regular"
                             />
@@ -127,26 +128,26 @@
             <LinearLayout
                 android:layout_alignParentRight="true"
                 android:layout_width="180sp"
-                android:layout_height="100sp"
+                android:layout_height="80sp"
                 android:background="@drawable/dashbord_filter_work"
                 android:gravity="center"
                 >
                 <LinearLayout
                     android:layout_width="130dp"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     >
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                         <LinearLayout
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:gravity="center"
                             android:background="@drawable/dashboard_icon_circle"
                             >
                             <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="25dp"
+                                android:layout_width="15dp"
+                                android:layout_height="21dp"
                                 android:src="@drawable/work_icon"
                                 />
                         </LinearLayout>
@@ -156,17 +157,18 @@
                             android:text="Work"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentBottom="true"
-                            android:textSize="23dp"
+                            android:textSize="20dp"
                             android:textStyle="bold"
                             android:fontFamily="@font/cabin_regular"
                             />
                         <TextView
+                            android:id="@+id/work_totalcounts"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="5"
                             android:layout_alignParentRight="true"
                             android:layout_alignParentBottom="true"
-                            android:textSize="23dp"
+                            android:textSize="20dp"
                             android:textStyle="bold"
                             android:fontFamily="@font/cabin_regular"
                             />
@@ -183,26 +185,26 @@
             <LinearLayout
                 android:layout_alignParentLeft="true"
                 android:layout_width="180sp"
-                android:layout_height="100sp"
+                android:layout_height="80sp"
                 android:background="@drawable/dashbord_filter_daily"
                 android:gravity="center"
                 >
                 <LinearLayout
                     android:layout_width="130dp"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     >
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                         <LinearLayout
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:gravity="center"
                             android:background="@drawable/dashboard_icon_circle"
                             >
                             <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="25dp"
+                                android:layout_width="15dp"
+                                android:layout_height="21dp"
                                 android:src="@drawable/daily_icon"
                                 />
                         </LinearLayout>
@@ -212,17 +214,18 @@
                             android:text="Daily"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentBottom="true"
-                            android:textSize="23dp"
+                            android:textSize="20dp"
                             android:textStyle="bold"
                             android:fontFamily="@font/cabin_regular"
                             />
                         <TextView
+                            android:id="@+id/daily_totalcounts"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="5"
                             android:layout_alignParentRight="true"
                             android:layout_alignParentBottom="true"
-                            android:textSize="23dp"
+                            android:textSize="20dp"
                             android:textStyle="bold"
                             android:fontFamily="@font/cabin_regular"
                             />
@@ -232,26 +235,26 @@
             <LinearLayout
                 android:layout_alignParentRight="true"
                 android:layout_width="180sp"
-                android:layout_height="100sp"
+                android:layout_height="80sp"
                 android:background="@drawable/dashbord_filter_groceries"
                 android:gravity="center"
                 >
                 <LinearLayout
                     android:layout_width="130dp"
-                    android:layout_height="80dp"
+                    android:layout_height="60dp"
                     >
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                         <LinearLayout
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:gravity="center"
                             android:background="@drawable/dashboard_icon_circle"
                             >
                             <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="25dp"
+                                android:layout_width="15dp"
+                                android:layout_height="21dp"
                                 android:src="@drawable/groceries_icon"
                                 />
                         </LinearLayout>
@@ -261,17 +264,18 @@
                             android:text="Groceries"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentBottom="true"
-                            android:textSize="23dp"
+                            android:textSize="20dp"
                             android:textStyle="bold"
                             android:fontFamily="@font/cabin_regular"
                             />
                         <TextView
+                            android:id="@+id/groceries_totalcounts"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="5"
                             android:layout_alignParentRight="true"
                             android:layout_alignParentBottom="true"
-                            android:textSize="23dp"
+                            android:textSize="20dp"
                             android:textStyle="bold"
                             android:fontFamily="@font/cabin_regular"
                             />
@@ -285,7 +289,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         >
         <ImageView
@@ -311,14 +315,46 @@
             />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/search_bar"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            android:focusedByDefault="false"
+            android:hint="Search Task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_bar"
+            />
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_tasks"
         android:layout_width="match_parent"
         android:layout_height="330dp"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@android:color/transparent"
         tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/no_data_label"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:text="No Data"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/cabin_regular"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"

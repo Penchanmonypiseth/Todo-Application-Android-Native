@@ -46,13 +46,28 @@
                     android:fontFamily="@font/cabin_regular"
                     />
                 <TextView
-                    android:id="@+id/time_schedule"
+                    android:id="@+id/planDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="08:00 Am to 12:00 PM"
+                    android:text="Plan Date: 4/4/2002"
                     android:textAlignment="center"
                     android:gravity="center"
                     android:textColor="@color/gray"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/cabin_regular"
+                    />
+                <TextView
+                    android:id="@+id/categoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"
+                    android:background="@drawable/category_label_frame"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textSize="15sp"
                     android:fontFamily="@font/cabin_regular"
@@ -74,15 +89,7 @@
                     android:layout_marginRight="20sp"
                     >
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/view_icon"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginRight="3dp"
-                        android:layout_marginTop="7dp"
-                        />
-                    <ImageView
+                        android:id="@+id/update_button"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:src="@drawable/edit_icon"
@@ -92,6 +99,7 @@
                         android:layout_marginTop="5dp"
                         />
                     <ImageView
+                        android:id="@+id/delete_button"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:src="@drawable/delete_icon"

@@ -1,7 +1,12 @@
+
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.android.application")
+    id("kotlin-android")
+    id("com.google.gms.google-services")
 }
+
+
+
 
 android {
     namespace = "com.example.todoapplication"
@@ -46,9 +51,18 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation (libs.circleimageview)
+    // ===== Import the Firebase BoM ========
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.auth)
+    implementation("com.google.firebase:firebase-database:21.0.0")
+}
+
+fun plugin(s: String) {
 
 }
