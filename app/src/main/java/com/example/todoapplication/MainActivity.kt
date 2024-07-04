@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         taskRef.addValueEventListener(object : ValueEventListener {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onDataChange(snapshot: DataSnapshot) {
                 tasks.clear() // Clear the list before adding new items
                 for (userSnapshot in snapshot.children) {
@@ -63,6 +64,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, FieldTaskScreen::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_activity_from_right, R.anim.slide_activity_to_left)
+            finish()
         }
 
         val searchView = findViewById<EditText>(R.id.search_bar)

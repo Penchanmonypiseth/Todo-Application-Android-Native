@@ -117,6 +117,7 @@ class FieldTaskScreen: AppCompatActivity(), DatePickerDialogListener {
     // ======= Handle Back to All Listing Page ============
     private fun handleBackToListingPage() {
         val intent = Intent(this, MainActivity::class.java)
+        finish()
         startActivity(intent)
         overridePendingTransition(R.anim.slide_activity_from_left, R.anim.slide_activity_to_right);
     }
@@ -170,6 +171,7 @@ class FieldTaskScreen: AppCompatActivity(), DatePickerDialogListener {
             .setPositiveButton("Okay") { dialog, _ ->
                 dialog.dismiss();
                 val intent = Intent(this, MainActivity::class.java)
+                finish()
                 startActivity(intent);
             }
             .show();
@@ -195,6 +197,7 @@ class FieldTaskScreen: AppCompatActivity(), DatePickerDialogListener {
                     .setPositiveButton("Okay") { dialog, _ ->
                         dialog.dismiss()
                         val intent = Intent(this, MainActivity::class.java)
+                        finish()
                         startActivity(intent)
                     }
                     .show()
